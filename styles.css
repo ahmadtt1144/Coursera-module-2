@@ -1,6 +1,6 @@
 /** @format */
 
-{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -27,6 +27,7 @@ h1 {
   position: relative;
   margin-bottom: 20px;
   color: #333;
+  box-sizing: border-box;
 }
 
 .section-title {
@@ -53,6 +54,13 @@ h1 {
   background-color: #ffcc00;
 }
 
+/* Clearfix to handle floating issues */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* Desktop view */
 @media (min-width: 992px) {
   .section {
@@ -60,7 +68,7 @@ h1 {
     float: left;
     margin-right: 3.333%;
   }
-  .section:last-child {
+  .section:nth-child(3) {
     margin-right: 0;
   }
 }
