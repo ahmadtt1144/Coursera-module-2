@@ -1,2 +1,2 @@
-# coursera-module-2
-module 2 coding assignment
+# coursera-module-3
+module 3 coding assignment
