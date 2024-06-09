@@ -1,98 +1,10 @@
 /** @format */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
+.menu-section {
   padding: 20px;
+  background-color: #ccc; /* Set background color to distinguish the section */
 }
 
-header {
+.menu-section h2 {
   text-align: center;
-  margin-bottom: 20px;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-.section {
-  border: 2px solid black;
-  padding: 20px;
-  background-color: #e0e0e0;
-  position: relative;
-  margin-bottom: 20px;
-  color: #333;
-  box-sizing: border-box;
-}
-
-.section-title {
-  position: absolute;
-  top: -20px;
-  left: 20px;
-  background-color: #333;
-  padding: 3px 9px;
-  border: 2px solid black;
-  font-size: 1.25em;
-  color: #fff;
-  border-radius: 3px;
-}
-
-#chicken .section-title {
-  background-color: #ff7f7f;
-}
-
-#beef .section-title {
-  background-color: #ff4d4d;
-}
-
-#sushi .section-title {
-  background-color: #ffcc00;
-}
-
-/* Clearfix to handle floating issues */
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Desktop view */
-@media (min-width: 992px) {
-  .section {
-    width: 30%;
-    float: left;
-    margin-right: 3.333%;
-  }
-  .section:nth-child(3) {
-    margin-right: 0;
-  }
-}
-
-/* Tablet view */
-@media (min-width: 768px) and (max-width: 991px) {
-  .section {
-    width: 45%;
-    margin-right: 5%;
-    float: left;
-  }
-  .section:nth-child(2) {
-    margin-right: 0;
-  }
-  .section:nth-child(3) {
-    width: 100%;
-    margin-top: 20px;
-  }
-}
-
-/* Mobile view */
-@media (max-width: 767px) {
-  .section {
-    width: 100%;
-    margin-right: 0;
-  }
 }
